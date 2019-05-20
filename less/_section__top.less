@@ -1,0 +1,23 @@
+.section__top {
+
+    .wrap {
+        background-image: url(../img/bg-1.jpg);
+        position: relative;
+        z-index: 10;
+        background-size: cover;
+        background-position: center;
+        min-height: 600px;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        background-color: @color-dark;
+        width: ~"calc(50% + 300px)";
+        height: 800px;
+        top: 0;
+        left: 0;
+        border-radius: 0 0 30px 0;
+    }
+}
