@@ -4,7 +4,7 @@ header {
 
     .logo {
         img {
-            width: 120px;
+            width: 135px;
         }
     }
 
@@ -15,16 +15,41 @@ header {
 
         li {
             display: inline-block;
-            padding-left: 40px;
+            padding-left: 50px;
         }
 
         a {
             color: @color-light;
             text-decoration: none;
+            transition: @transition;
+
+            &:hover {
+                color: @color-primary;
+                text-decoration: underline;
+            }
         }
     }
 
     .contact {
         float: right;
+        text-align: right;
+        padding: 8px 0;
+
+        a {
+
+            display: block;
+            text-decoration: none;
+            color: @color-dark;
+        }
+
+        .tel {
+            font-size: @font-size__l;
+            cursor: inherit;
+        }
+
+        .popup-open:hover {
+            color: @color-secondary;
+            text-decoration: underline;
+        }
     }
 }
