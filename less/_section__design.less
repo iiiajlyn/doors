@@ -10,13 +10,84 @@
         display: flex;
         background-color: @color-dark;
 
+        > div {
+            width: 100% / 3;
+            height: 400px;
+        }
+
+        .image {
+            background-position: center;
+            background-size: cover;
+            align-items: flex-end;
+            justify-content: center;
+            display: flex;
+
+            .btn {
+                margin-bottom: 30px;
+            }
+        }
+
+        .desc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                padding: 50px;
+            }
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            p {
+                font-size: 50px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+
+        .sale {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            padding: 5px 20px;
+            background-color: @color-primary;
+            border-radius: 30px;
+            color: @color-dark;
+        }
+    }
+
+    .doors-light {
         .title {
             .gradient-light
         }
 
-        > div {
-            width: 100% / 3;
-            height: 400px;
+        .image {
+            background-image: url(../img/dis-1.jpg);
+        }
+    }
+
+    .doors-standart {
+        .title {
+            .gradient-standart
+        }
+
+        .image {
+            background-image: url(../img/dis-2.jpg);
+        }
+    }
+
+    .doors-elite {
+        .title {
+            .gradient-elite
+        }
+
+        .image {
+            background-image: url(../img/dis-3.jpg);
         }
     }
 }

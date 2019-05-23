@@ -21,9 +21,23 @@ body {
     padding: 10px 30px;
     background-color: #4CAF50;
     color: #fff;
-    margin: auto;
     border-radius: 30px;
     text-decoration: none;
     width: fit-content;
-    .shadow
+    .transition;
+    .shadow__min;
+
+    &:hover {
+        background-color: @color-secondary + 30%;
+        .shadow__mid;
+    }
+
+    &.light {
+        color: @color-dark;
+        background-color: @color-light;
+
+        &:hover {
+            background-color: @color-primary;
+        }
+    }
 }
