@@ -1,7 +1,33 @@
-.shadow {
+.shadow__min {
+    box-shadow: -2px 3px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.shadow__mid {
+    box-shadow: -2px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.shadow__max {
     box-shadow: -2px 7px 20px 0px rgba(0, 0, 0, 0.5);
 }
-.gradient-light{
+
+.gradient-light {
     background-image: repeating-linear-gradient(to bottom right, rgb(183, 235, 152) 0%, rgb(125, 219, 85) 100%);
     background-position: center;
+}
+
+.gradient-standart {
+    background-image: repeating-linear-gradient(to bottom right, rgb(116, 222, 124) 0%, #44c448 100%);
+    background-position: center;
+}
+
+.gradient-elite {
+    background-image: repeating-linear-gradient(to bottom right, rgb(102, 211, 166) 0%, rgb(56, 175, 95) 100%);
+    background-position: center;
+}
+
+.transition {
+    -webkit-transition: .1s linear;
+    -moz-transition: .1s linear;
+    -o-transition: .1s linear;
+    transition: .1s linear;
 }
