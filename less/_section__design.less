@@ -1,4 +1,6 @@
 .section__design {
+    padding-bottom: 80px;
+
     h2 {
         font-size: @font-size__l;
         color: @color-dark;
@@ -6,13 +8,20 @@
         padding-bottom: 30px;
     }
 
-    article {
+    .inner {
         display: flex;
         background-color: @color-dark;
 
         > div {
             width: 100% / 3;
             height: 400px;
+            .transition;
+
+            &:hover {
+                .shadow__mid;
+                position: relative;
+                z-index: 10;
+            }
         }
 
         .image {
@@ -50,15 +59,7 @@
             }
         }
 
-        .sale {
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            padding: 5px 20px;
-            background-color: @color-primary;
-            border-radius: 30px;
-            color: @color-dark;
-        }
+
     }
 
     .doors-light {

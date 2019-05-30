@@ -6,6 +6,7 @@
     <title>раздвижные двери премиум качества по стандартным ценам</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 </head>
 
@@ -49,7 +50,7 @@
             <div class="wrap">
                 <h2>Дизайн дверей</h2>
 
-                <article class="doors-light">
+                <div class="inner doors-light">
                     <div class="title">
                         <p>Light</p>
                         <span class="sale">20%</span>
@@ -60,9 +61,9 @@
                             легкость комфорт они сделанны в минималестичном дизайне и отражают простоту и гармонию
                             которая присуща нашему времени</p>
                     </div>
-                </article>
+                </div>
 
-                <article class="doors-standart">
+                <div class="inner doors-standart">
                     <div class="desc">
                         <p>Простое решение для тьех кто ценит
                             легкость комфорт они сделанны в минималестичном дизайне и отражают простоту и гармонию
@@ -73,9 +74,9 @@
                         <span class="sale">25%</span>
                     </div>
                     <div class="image"><a href="#" class="btn light">Подробнее</a></div>
-                </article>
+                </div>
 
-                <article class="doors-elite">
+                <div class="inner doors-elite">
                     <div class="image"><a href="#" class="btn light">Подробнее</a></div>
                     <div class="desc">
                         <p>Простое решение для тьех кто ценит
@@ -86,18 +87,19 @@
                         <p>Elite</p>
                         <span class="sale">30%</span>
                     </div>
-                </article>
+                </div>
 
             </div>
         </section>
 
         <section class="section__product">
             <div class="wrap">
-                <h2>Комплектация</h2>
-
-                <article class="doors-light before__left">
-                    <h3>light</h3>
+                <h2>Комплектация раздвижных дверей</h2>
+            </div>
+            <div class="doors-light product before-left">
+                <div class="container">
                     <span class="sale">20%</span>
+                    <p class="title">light</p>
                     <ul class="feature">
                         <li>Высокопрочное стекло</li>
                         <li>В металлической раме</li>
@@ -107,18 +109,145 @@
                         <li>Установка от 1500 руб.</li>
                     </ul>
                     <ul class="options">
-                        <li>Ширина до 100см</li>
-                        <li>Высота до 300см</li>
-                        <li>Старая цена: <i>4300 руб.</i></li>
-                        <li>3500 <b>руб.</b></li>
+                        <li>Ширина: до 100см</li>
+                        <li>Высота: до 300см</li>
+                        <li>Старая цена: <del>4300 руб.</del></li>
+                        <li class="price"><span>3500</span> <b>руб.</b></li>
                     </ul>
 
-                </article>
+                    <form action="mailto:xxvxx@list.ru" enctype="text/plain">
+                        <fieldset>
+                            <legend>Воспользоватся предложением!</legend>
+                            <input type="text" value="Ваше имя*">
+                            <input type="tel" value="Телефон*">
+                            <input type="button" value="Заказать*" class="btn">
+                        </fieldset>
+
+                        <p>* Нажимая на кнопку заказать я даю свое согласие на обработку персональных данных</p>
+                    </form>
+
+                </div>
+            </div>
+            <div class="doors-standart product before-right">
+                <div class="container">
+                    <span class="sale">25%</span>
+                    <p class="title">STANDART</p>
+                    <ul class="feature">
+                        <li>Высокопрочное стекло</li>
+                        <li>В металлической раме</li>
+                        <li>Любая расцветка</li>
+                        <li>Прозрачное, матовое стекло</li>
+                        <li>Цельное стекло</li>
+                        <li>Установка от 1500 руб.</li>
+                    </ul>
+                    <ul class="options">
+                        <li>Ширина: до 100см</li>
+                        <li>Высота: до 300см</li>
+                        <li>Старая цена: <del>5300 руб.</del></li>
+                        <li class="price"><span>4200</span> <b>руб.</b></li>
+                    </ul>
+
+                    <form action="mailto:xxvxx@list.ru" enctype="text/plain">
+                        <fieldset>
+                            <legend>Воспользоватся предложением!</legend>
+                            <input type="text" value="Ваше имя*">
+                            <input type="tel" value="Телефон*">
+                            <input type="button" value="Заказать*" class="btn">
+                        </fieldset>
+
+                        <p>* Нажимая на кнопку заказать я даю свое согласие на обработку персональных данных</p>
+                    </form>
+
+                </div>
+            </div>
+            <div class="doors-elite product before-left">
+                <div class="container">
+                    <span class="sale">30%</span>
+                    <p class="title">elite</p>
+                    <ul class="feature">
+                        <li>Высокопрочное стекло</li>
+                        <li>В металлической раме</li>
+                        <li>Любая расцветка</li>
+                        <li>Прозрачное, матовое стекло</li>
+                        <li>Цельное стекло</li>
+                        <li>Установка от 1500 руб.</li>
+                    </ul>
+                    <ul class="options">
+                        <li>Ширина: до 100см</li>
+                        <li>Высота: до 300см</li>
+                        <li>Старая цена: <del>6500 руб.</del></li>
+                        <li class="price"><span>5000</span> <b>руб.</b></li>
+                    </ul>
+
+                    <form action="mailto:xxvxx@list.ru" enctype="text/plain">
+                        <fieldset>
+                            <legend>Воспользоватся предложением!</legend>
+                            <input type="text" value="Ваше имя*">
+                            <input type="tel" value="Телефон*">
+                            <input type="button" value="Заказать*" class="btn">
+                        </fieldset>
+
+                        <p>* Нажимая на кнопку заказать я даю свое согласие на обработку персональных данных</p>
+                    </form>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="section__gallery">
+            <div class="wrap">
+                <h2>Примеры работ</h2>
+                <a href="/img/dis-1.jpg" data-fancybox data-caption="Caption for single image">
+                    <img src="/img/dis-2.jpg" alt="" />
+                </a>
+                <a href="/img/dis-1.jpg" data-fancybox data-caption="Caption for single image">
+                    <img src="/img/dis-2.jpg" alt="" />
+                </a>
+                <a href="/img/dis-1.jpg" data-fancybox data-caption="Caption for single image">
+                    <img src="/img/dis-2.jpg" alt="" />
+                </a>
+                <a href="/img/dis-1.jpg" data-fancybox data-caption="Caption for single image">
+                    <img src="/img/dis-2.jpg" alt="" />
+                </a>
+                <a href="/img/dis-1.jpg" data-fancybox data-caption="Caption for single image">
+                    <img src="/img/dis-2.jpg" alt="" />
+                </a>
+                <a href="/img/dis-1.jpg" data-fancybox data-caption="Caption for single image">
+                    <img src="/img/dis-2.jpg" alt="" />
+                </a>
+                <a href="/img/dis-1.jpg" data-fancybox data-caption="Caption for single image">
+                    <img src="/img/dis-2.jpg" alt="" />
+                </a>
+                <a href="/img/dis-1.jpg" data-fancybox data-caption="Caption for single image">
+                    <img src="/img/dis-2.jpg" alt="" />
+                </a>
+                <a href="/img/dis-1.jpg" data-fancybox data-caption="Caption for single image">
+                    <img src="/img/dis-2.jpg" alt="" />
+                </a>
+            </div>
+        </section>
+        <section class="section__question">
+            <div class="wrap">
+                <h2>Почему выбирают нас?</h2>
             </div>
         </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        <div class="wrap">
+            <div class="top">
+                <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                <script src="//yastatic.net/share2/share.js"></script>
+                <div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,twitter,viber,whatsapp,skype,telegram"></div>
+                <div class="right"><a href="tel:+74999999">+7(495)777-85-37</a>
+                    <p>Или просто позвоните нам</p>
+                </div>
+            </div>
+            <p class="text">Компания "Перегородки Москвы" - разработчик и производитель межкомнатных перегородок.
+                Мы сфокусировались исключительно на межкомнатных перегородках, чтобы сделать наш продукт лучшим по качеству и цене, отвечающим требованиям даже самого требовательного заказчика.
+                Профессиональные дизайнеры и замерщики дадут вам рекомендации об оптимальных вариантах раздвижных систем для вашего помещения. Менеджеры профессионально будут вести ваш проект, отвечая на все вопросы вовремя и держа вас в курсе всех работ. Опытные бригады монтажников выполнят установку и наладку конструкций под ключ в удобное для вас время.</p>
+        </div>
+    </footer>
     <div class="popup-fade">
         <div class="popup">
             <a class="popup-close" href="#">Закрыть</a>
@@ -127,4 +256,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jq-popup.js"></script>
-</body></html>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
